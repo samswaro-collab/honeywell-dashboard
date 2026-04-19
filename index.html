@@ -8,19 +8,19 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;overflow-x:hidden;}
-.topbar{background:#1a1a2e;color:white;padding:12px 20px;display:flex;align-items:center;gap:20px;border-bottom:3px solid #e31837;position:sticky;top:0;z-index:100;}
-.logo-pill{background:white;color:#e31837;padding:6px 12px;border-radius:20px;font-weight:bold;font-size:13px;}
+.topbar{background:#1a1a2e;color:white;padding:12px 20px;display:flex;align-items:center;gap:20px;border-bottom:3px solid #9b2335;position:sticky;top:0;z-index:100;}
+.logo-pill{background:white;color:#9b2335;padding:6px 12px;border-radius:20px;font-weight:bold;font-size:13px;}
 .topbar-title{flex:1;font-size:18px;font-weight:600;}
 .pill{background:rgba(255,255,255,0.15);padding:5px 10px;border-radius:15px;font-size:12px;}
 .pill-status{background:#4caf50;padding:5px 10px;border-radius:15px;font-size:12px;}
-.refresh-banner{background:#e31837;color:white;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;font-size:13px;position:sticky;top:50px;z-index:99;}
+.refresh-banner{background:#9b2335;color:white;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;font-size:13px;position:sticky;top:50px;z-index:99;}
 .container{display:flex;min-height:calc(100vh - 80px);}
 .sidebar{width:240px;background:#1a1a2e;color:white;padding:20px 0;overflow-y:auto;height:calc(100vh - 80px);position:sticky;top:80px;}
 .sidebar-label{font-size:11px;font-weight:700;text-transform:uppercase;color:#999;padding:0 15px;margin-bottom:8px;letter-spacing:0.5px;}
 .sidebar-section{margin-bottom:22px;}
 .sidebar-item{padding:10px 15px;cursor:pointer;font-size:13px;transition:all 0.2s;border-left:3px solid transparent;}
 .sidebar-item:hover{background:rgba(227,24,55,0.2);}
-.sidebar-item.active{background:rgba(227,24,55,0.3);border-left-color:#e31837;font-weight:600;}
+.sidebar-item.active{background:rgba(227,24,55,0.3);border-left-color:#9b2335;font-weight:600;}
 .sidebar-meta{font-size:10px;color:#aaa;padding:2px 15px 8px 15px;line-height:1.4;}
 .main-content{flex:1;padding:30px;overflow-y:auto;height:calc(100vh - 80px);}
 .section{display:none;}
@@ -29,25 +29,25 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:25px;}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:25px;}
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:25px;}
-.card{background:white;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,0.1);border-top:3px solid #e31837;}
+.card{background:white;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,0.1);border-top:3px solid #9b2335;}
 .card-title{font-size:13px;font-weight:700;text-transform:uppercase;color:#666;margin-bottom:15px;letter-spacing:0.5px;}
 .kpi{font-size:32px;font-weight:700;color:#1a1a2e;margin-bottom:5px;}
 .kpi-label{font-size:12px;color:#999;}
 .kpi-change{font-size:12px;color:#4caf50;margin-top:5px;}
 .kpi-change-neg{font-size:12px;color:#f44336;margin-top:5px;}
 .tag{display:inline-block;background:#f0f0f0;color:#333;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;margin-right:6px;margin-bottom:6px;}
-.tag-accent{background:rgba(227,24,55,0.1);color:#c41230;}
+.tag-accent{background:rgba(227,24,55,0.1);color:#7d1c2b;}
 .tag-hot{background:#fdecea;color:#c62828;}
 .tag-india{background:#fef3c7;color:#92400e;}
 .tag-def{background:#e8f5e9;color:#1b5e20;}
-.contact-card{background:white;border-radius:6px;padding:15px;border-left:3px solid #e31837;margin-bottom:12px;font-size:12px;}
+.contact-card{background:white;border-radius:6px;padding:15px;border-left:3px solid #9b2335;margin-bottom:12px;font-size:12px;}
 .contact-name{font-weight:600;color:#1a1a2e;margin-bottom:2px;}
 .contact-title{color:#666;font-size:11px;margin-bottom:5px;}
 .contact-location{color:#999;font-size:10px;}
 .prog-row{margin-bottom:15px;}
 .prog-label{display:flex;justify-content:space-between;font-size:11px;font-weight:600;color:#666;margin-bottom:5px;}
 .prog-bar{width:100%;height:8px;background:#e0e0e0;border-radius:4px;overflow:hidden;}
-.prog-fill{height:100%;background:#e31837;border-radius:4px;}
+.prog-fill{height:100%;background:#9b2335;border-radius:4px;}
 .loc-us{background:#dbeafe;color:#1e40af;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:700;}
 .loc-india{background:#fef3c7;color:#92400e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:700;}
 .chain{display:flex;align-items:stretch;gap:0;margin-bottom:14px;border-radius:10px;overflow:hidden;}
@@ -64,14 +64,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .bu-header-sub{font-size:11px;color:rgba(255,255,255,0.85);}
 .bu-action{padding:14px 18px;border-bottom:1px solid #f0f0f0;}
 .bu-action:last-child{border-bottom:none;}
-.bu-action-num{display:inline-block;background:#e31837;color:white;border-radius:50%;width:20px;height:20px;text-align:center;line-height:20px;font-size:11px;font-weight:700;margin-right:8px;}
+.bu-action-num{display:inline-block;background:#9b2335;color:white;border-radius:50%;width:20px;height:20px;text-align:center;line-height:20px;font-size:11px;font-weight:700;margin-right:8px;}
 .bu-action-title{font-size:13px;font-weight:700;color:#1a1a2e;margin-bottom:6px;}
 .bu-action-body{font-size:12px;color:#444;line-height:1.65;margin-bottom:8px;}
-.fast-sell{background:#fef2f2;border-left:3px solid #e31837;padding:7px 10px;border-radius:0 6px 6px 0;font-size:11px;color:#1a1a2e;font-weight:600;}
+.fast-sell{background:#fef2f2;border-left:3px solid #9b2335;padding:7px 10px;border-radius:0 6px 6px 0;font-size:11px;color:#1a1a2e;font-weight:600;}
 .india-banner{background:linear-gradient(135deg,#ff9800,#f44336);color:white;border-radius:10px;padding:15px 18px;margin-bottom:20px;}
 .vg-block{background:linear-gradient(135deg,#7b1fa2,#9c27b0);border-radius:10px;padding:13px 16px;margin-bottom:16px;color:#fff;}
 .prog-badge{display:inline-block;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;margin-right:6px;margin-bottom:6px;}
-::-webkit-scrollbar{width:8px;}::-webkit-scrollbar-track{background:#f1f1f1;}::-webkit-scrollbar-thumb{background:#e31837;border-radius:4px;}
+::-webkit-scrollbar{width:8px;}::-webkit-scrollbar-track{background:#f1f1f1;}::-webkit-scrollbar-thumb{background:#9b2335;border-radius:4px;}
 @media(max-width:1200px){.grid-4{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:900px){.grid-3{grid-template-columns:repeat(2,1fr);}.grid-2{grid-template-columns:1fr;}}
 </style>
@@ -134,7 +134,7 @@ const HW_DATA = {
       president: "Bob Buddecke",
       presTitle: "President & CEO, Electronic Solutions (post-spinoff title)",
       presYears: "27 years at Honeywell",
-      color:     "#e31837",
+      color:     "#9b2335",
       description: "Integrated avionics, navigation & sensors, electromagnetic defense, high-performance space solutions",
       // Internal sub-units that roll up to ES in the investor P&L:
       internalUnits: ["Electronic Solutions (avionics)", "Space and Defense", "Connected Aerospace"],
@@ -148,7 +148,7 @@ const HW_DATA = {
       president: "Dave Marinick",
       presTitle: "President & CEO, Engines & Power Systems (post-spinoff title)",
       presYears: "37+ years at Honeywell",
-      color:     "#c41230",
+      color:     "#7d1c2b",
       description: "Propulsion systems, auxiliary power units (APUs), electric power solutions — 72,000+ engines and 100,000+ APUs delivered over 60 years",
       internalUnits: ["Engines & Power Systems"],
       cyientAngle: "CMM/IPC tech pubs for TFE731 Block E + 131-9B APU overhaul cycle — S1000D authoring from Hyderabad",
@@ -272,7 +272,7 @@ const HW_DATA = {
   buSplit: {
     labels: ["Electronic Solutions ($6.8B)", "Engines & Power Systems ($5.4B)", "Control Systems ($5.2B)"],
     pcts:   [39, 31, 30],
-    colors: ["#e31837", "#c41230", "#1a1a2e"]
+    colors: ["#9b2335", "#7d1c2b", "#1a1a2e"]
   },
 
   // ── Opportunity Scores for Cyient ─────────────────────────────────────
@@ -284,6 +284,72 @@ const HW_DATA = {
     { label: "Defense MBSE/SysML (GPS-denied nav)",  score: 62 },
     { label: "Spinoff PLM/ERP Transition ER&D",      score: 58 },
     { label: "India BIETC Hyderabad Expansion",      score: 87 }
+  ],
+
+  // ── Outreach Playbook ─────────────────────────────────────────────────
+  outreachPlaybook: {
+    badge:   "Cold→Warm",
+    headline:"HONA Spin-off is the best cold-call opener in aerospace right now",
+    triggers: [
+      { icon:"🔄", label:"Spin-off Window (Mar–Aug 2026)",
+        body:"Form 10 filed March 2026. HONA is re-establishing all vendor agreements as a standalone company. New procurement cycles open now — first mover gets RFP invitations others won't.",
+        action:"Email hook: \"Saw Form 10 filing. Standalone HONA needs best-of-breed engineering partners. We're already embedded in avionics cert for [reference OEM]. Let's connect before Investor Day (June 3).\""
+      },
+      { icon:"📡", label:"Anthem Scaling to 3 OEM Partnerships Simultaneously",
+        body:"Anthem avionics is Honeywell's marquee platform — DO-178C Level A software, three simultaneous OEM integration programs. Certification bandwidth is the constraint.",
+        action:"Pitch: \"Anthem cert timelines are Boeing/Airbus schedule-critical. A cert gap costs more than outsourcing it. We've run Level A programs for [reference]. Call?\"" },
+      { icon:"⚡", label:"NXP / Autonomy Expansion (AI/eVTOL)",
+        body:"2025 partnership with NXP expands real-time autonomous flight processing. Near Earth Autonomy testing on AW139. Engineering demand for simulation, embedded SW, EMC is rising.",
+        action:"Reference NXP/Near Earth when discussing autonomous flight engineering — positions Cyient as an informed partner, not a cold vendor." },
+      { icon:"🇮🇳", label:"BIETC Hyderabad — India Leverage",
+        body:"Honeywell India Engineering (BIETC, Bangalore + Chennai) has 13,000+ engineers. Hyderabad has no Honeywell presence — Cyient HQ is Hyderabad, deep A&D pedigree.",
+        action:"India entry: Reach Honeywell India Bangalore BIETC leadership → establish India relationship → use as bridge to Bob Buddecke (ES, Phoenix) and Dave Marinick (E&PS, Urbana OH)." }
+    ],
+    coldToWarm: [
+      { step:1, label:"Cold Signal", body:"Monitor Honeywell press releases + SEC filings (EDGAR). Form 10 amendments, HONA announcements, Anthem OEM signing news — each is a call trigger." },
+      { step:2, label:"Personalised Email", body:"Reference specific HONA news. One sentence on Cyient's aerospace cert credential. One question. No deck attachment on first touch." },
+      { step:3, label:"LinkedIn Follow-Up", body:"Connect with Bob Buddecke (ES), Dave Marinick (E&PS), Rich DeGraff (CS) on LinkedIn. Engage their posts — like/comment with insight, not spam." },
+      { step:4, label:"Event Pre-Outreach", body:"Two weeks before Farnborough (July 20–24) or NBAA-BACE (Oct 20–22): email to schedule a 20-min meeting at the show. Reference shared attendance." },
+      { step:5, label:"Warm Meeting", body:"First meeting agenda: Anthem cert backlog → Cyient DO-178C track record → India cost model → HONA standalone vendor strategy. Ask for RFP introduction." }
+    ]
+  },
+
+  // ── Partnerships & Alliances ──────────────────────────────────────────
+  partnerships: [
+    { name:"NXP Semiconductors",    type:"Technology",  status:"Active 2025",
+      desc:"Expanded partnership for autonomous flight — AI-driven real-time processing for Honeywell Anthem. Joint development of next-gen cockpit compute platform.",
+      angle:"Cyient can support embedded SW validation, DO-254 hardware qualification, and EMC testing within the NXP/Anthem integration stack." },
+    { name:"Near Earth Autonomy",   type:"R&D",         status:"Active 2025",
+      desc:"Autonomous helicopter flight testing on Leonardo AW139. Honeywell providing navigation sensors + FCC; Near Earth providing autonomy stack.",
+      angle:"Opens eVTOL/AAM engineering demand: simulation, system integration, certification engineering for autonomous rotorcraft programs." },
+    { name:"Regal Rexnord",         type:"Engineering", status:"Active 2025",
+      desc:"Multi-year AAM/eVTOL powertrain collaboration. Honeywell providing APUs and electric power systems; Regal Rexnord providing motors and actuation.",
+      angle:"E&PS segment (Dave Marinick) drives this — powertrain ER&D, test engineering, and tech publications are potential Cyient entries." },
+    { name:"BeyondMath (UK Consortium)", type:"R&D",   status:"Active 2025",
+      desc:"£14.1M UK R&D project on AI + additive manufacturing for aerospace. Honeywell UK embedded in physics simulation optimisation consortium.",
+      angle:"Connected Aerospace (Jason Wissink) and Engineering Tech (Todd Giles) lead — simulation and digital twin engineering support." },
+    { name:"CFM International (Safran JV)", type:"Competitive Context", status:"Awareness",
+      desc:"Honeywell competes with CFM/LEAP in the turbofan market via TFE731 and HTF7000. Understanding CFM wins/losses shapes Honeywell E&PS priorities.",
+      angle:"Honeywell E&PS focuses on business jet and regional turbofan — tech pubs, CMM/IPC documentation, and overhaul engineering are the Cyient entry points." }
+  ],
+
+  // ── Industry Events 2026 ──────────────────────────────────────────────
+  events: [
+    { name:"HONA Investor Day",     date:"June 3, 2026",          location:"Phoenix, AZ",
+      type:"Corporate",  priority:"🔴 MUST",
+      why:"Jim Currier and Josh Jepsen outline HONA standalone strategy — vendor priorities, ER&D budget, India ambitions. Pre-event outreach 2 weeks before is the golden window." },
+    { name:"Farnborough Airshow",   date:"July 20–24, 2026",      location:"Farnborough, UK",
+      type:"Trade Show", priority:"🔴 MUST",
+      why:"Honeywell Aerospace has a major presence every Farnborough. Supply chain leadership, BU presidents, procurement heads all attend. Best in-person access outside Phoenix HQ." },
+    { name:"NBAA-BACE",             date:"Oct 20–22, 2026",       location:"Las Vegas, NV",
+      type:"Trade Show", priority:"🟠 HIGH",
+      why:"Core business jet market. Honeywell showcases Anthem and Forge at NBAA every year. CS and ES leadership attends. Best event for Anthem-related outreach." },
+    { name:"MRO Americas",          date:"Apr 21–23, 2026",       location:"Orlando, FL",
+      type:"Trade Show", priority:"🟡 MEDIUM",
+      why:"Honeywell aftermarket and Customer & Product Support (Toby Price) team attends. MRO tech pubs, overhaul engineering, predictive maintenance — Cyient natural fit." },
+    { name:"AeroDef Manufacturing", date:"Apr 14–16, 2026",       location:"Boston, MA",
+      type:"Conference", priority:"🟡 MEDIUM",
+      why:"Defense and advanced manufacturing focus. Honeywell Electronic Solutions (defense avionics, space) team present. MBSE, simulation, defense engineering angle." }
   ]
 };
 </script>
@@ -334,6 +400,18 @@ const HW_DATA = {
     <div class="sidebar-item" onclick="switchSection(event,'spinoff')">🔄 Spinoff Transition</div>
   </div>
   <div class="sidebar-section">
+    <div class="sidebar-label">Outreach Playbook</div>
+    <div class="sidebar-item" onclick="switchSection(event,'outreach')">🤝 Outreach Playbook <span style="background:#4caf50;color:#fff;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:700;margin-left:4px;">Cold→Warm</span></div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-label">Partnership &amp; Alliances</div>
+    <div class="sidebar-item" onclick="switchSection(event,'partnerships')">🤝 Partnerships &amp; Alliances</div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-label">Industry Events</div>
+    <div class="sidebar-item" onclick="switchSection(event,'events')">📅 Industry Events</div>
+  </div>
+  <div class="sidebar-section">
     <div class="sidebar-label">Reference</div>
     <div class="sidebar-item" onclick="switchSection(event,'reference')">📚 Market Context</div>
   </div>
@@ -349,7 +427,7 @@ const HW_DATA = {
 <div id="overview" class="section active">
   <div class="section-title">📊 Honeywell Aerospace — Summary KPIs</div>
 
-  <div style="background:linear-gradient(135deg,#1a1a2e,#e31837);color:white;border-radius:10px;padding:15px 20px;margin-bottom:22px;">
+  <div style="background:linear-gradient(135deg,#1a1a2e,#9b2335);color:white;border-radius:10px;padding:15px 20px;margin-bottom:22px;">
     <div style="font-size:14px;font-weight:700;margin-bottom:6px;" id="strat-headline">🚀 Strategic Context</div>
     <div style="font-size:12px;opacity:.93;line-height:1.7;" id="strat-body">Loading…</div>
   </div>
@@ -402,7 +480,7 @@ const HW_DATA = {
   <div class="card">
     <div class="card-title">Reporting Structure (Post-Spinoff)</div>
     <div style="font-size:12px;line-height:2;color:#444;padding:10px 0;">
-      <div style="text-align:center;background:#e31837;color:white;padding:10px;border-radius:8px;font-weight:700;max-width:340px;margin:0 auto 10px auto;" id="org-ceo-box">—</div>
+      <div style="text-align:center;background:#9b2335;color:white;padding:10px;border-radius:8px;font-weight:700;max-width:340px;margin:0 auto 10px auto;" id="org-ceo-box">—</div>
       <div style="text-align:center;color:#999;font-size:11px;margin-bottom:8px;">Reports to CEO</div>
       <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;" id="org-bu-boxes"></div>
       <div style="text-align:center;color:#999;font-size:11px;margin-top:12px;margin-bottom:6px;">Also reporting to CEO</div>
@@ -415,16 +493,16 @@ const HW_DATA = {
 <div id="signals" class="section">
   <div class="section-title">📡 Signal Chains — Active Buying Events</div>
 
-  <div style="background:#fef2f2;border-left:4px solid #e31837;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:20px;font-size:12px;color:#7f1d1d;line-height:1.7;">
+  <div style="background:#fef2f2;border-left:4px solid #9b2335;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:20px;font-size:12px;color:#7f1d1d;line-height:1.7;">
     <strong>How to use:</strong> Each chain = a live market signal → Honeywell's response → specific ER&D gap created → Cyient entry. Lead with the signal in outreach — it proves you track their budget cycle, not cold-calling.
   </div>
 
   <!-- Chain 1: Electronic Solutions -->
   <div class="chain" style="background:#fafafa;border:1px solid #e0e0e0;">
-    <div class="chain-num" style="background:#e31837;">1</div>
+    <div class="chain-num" style="background:#9b2335;">1</div>
     <div class="chain-body">
       <div class="chain-cell" style="background:#fff8f8;">
-        <div class="chain-label" style="color:#e31837;">📡 ES — LIVE SIGNAL</div>
+        <div class="chain-label" style="color:#9b2335;">📡 ES — LIVE SIGNAL</div>
         <div class="chain-head">Anthem Avionics: 200+ SW Engineer Hiring Wave · Phoenix AZ</div>
         <div class="chain-body-text">Electronic Solutions is in a certification sprint for the Anthem next-gen avionics platform — replacing Primus Epic on business jets, regional jets, and eVTOL. Honeywell posted 200+ avionics SW engineering roles (DO-178C Level A, embedded C/C++, ARINC 429/664). First OEM customer: Embraer E-Jet NXT. Additional OEM programs in pipeline.</div>
       </div>
@@ -443,10 +521,10 @@ const HW_DATA = {
 
   <!-- Chain 2: E&PS -->
   <div class="chain" style="background:#fafafa;border:1px solid #e0e0e0;margin-top:2px;">
-    <div class="chain-num" style="background:#c41230;">2</div>
+    <div class="chain-num" style="background:#7d1c2b;">2</div>
     <div class="chain-body">
       <div class="chain-cell" style="background:#fff5f5;">
-        <div class="chain-label" style="color:#c41230;">📡 E&PS — LIVE SIGNAL</div>
+        <div class="chain-label" style="color:#7d1c2b;">📡 E&PS — LIVE SIGNAL</div>
         <div class="chain-head">Boeing 787 APU (131-9B) Sustainment — MRO Demand Rising</div>
         <div class="chain-body-text">Honeywell is sole-source on the 131-9B APU for all 787 variants. With 787 delivery ramp (Boeing targeting 10+/month) and in-service fleet exceeding 1,000 aircraft, initial overhaul intervals are hitting. Dave Marinick's E&PS BU is adding Urbana OH engineering roles for AMM revision, depot process engineering, and CMM authoring.</div>
       </div>
@@ -558,7 +636,7 @@ const HW_DATA = {
 
   <!-- ES Actions -->
   <div class="bu-block">
-    <div class="bu-header" style="background:linear-gradient(135deg,#e31837,#c41230);">
+    <div class="bu-header" style="background:linear-gradient(135deg,#9b2335,#7d1c2b);">
       <div>
         <div class="bu-header-title" id="action-es-hdr">🖥️ Electronic Solutions</div>
         <div class="bu-header-sub" id="action-es-sub">Anthem · Navigation · SATCOM · Space · Phoenix AZ</div>
@@ -582,7 +660,7 @@ const HW_DATA = {
 
   <!-- E&PS Actions -->
   <div class="bu-block">
-    <div class="bu-header" style="background:linear-gradient(135deg,#c41230,#8b0000);">
+    <div class="bu-header" style="background:linear-gradient(135deg,#7d1c2b,#8b0000);">
       <div>
         <div class="bu-header-title" id="action-eps-hdr">⚙️ Engines & Power Systems</div>
         <div class="bu-header-sub" id="action-eps-sub">TFE731 · HTF7000 · 131-9B APU · Urbana OH</div>
@@ -623,7 +701,7 @@ const HW_DATA = {
 <div id="hiring" class="section">
   <div class="section-title">💼 Hiring Intelligence</div>
 
-  <div style="background:#fef2f2;border-left:4px solid #e31837;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:20px;font-size:12px;color:#7f1d1d;line-height:1.7;">
+  <div style="background:#fef2f2;border-left:4px solid #9b2335;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:20px;font-size:12px;color:#7f1d1d;line-height:1.7;">
     <strong>How to use:</strong> Cluster of open roles = funded program in pain. "Senior Avionics SW Engineer — DO-178C Level A" in Phoenix = Anthem cert sprint with budget. Use these as conversation starters — not cold-call hooks.
   </div>
 
@@ -819,7 +897,7 @@ const HW_DATA = {
       <tbody>
         <tr><td style="padding:9px;font-weight:600;">HCL Technologies</td><td style="padding:9px;"><span class="tag">IT/OT</span></td><td style="padding:9px;font-size:11px;">Major IT partnership (SAP, infra, HCE Hyderabad). Not deep in aerospace ER&D or cert engineering.</td><td style="padding:9px;font-size:11px;color:#1b5e20;">Cyient is engineering ER&D — avionics cert, propulsion docs. Complementary, not competing. Position as aerospace ER&D, not IT services.</td></tr>
         <tr style="background:#f9f9f9;"><td style="padding:9px;font-weight:600;">Tata Technologies</td><td style="padding:9px;"><span class="tag">Product Eng</span></td><td style="padding:9px;font-size:11px;">Product lifecycle engineering for some Honeywell mechanical components. Automotive-primary — aerospace cert is secondary.</td><td style="padding:9px;font-size:11px;color:#1b5e20;">Cyient is aerospace-native. DO-178C, AS9100, S1000D depth is greater. TCS is not a DO-178C shop.</td></tr>
-        <tr><td style="padding:9px;font-weight:600;">LTTS (L&T Tech Svcs)</td><td style="padding:9px;"><span class="tag">ER&D</span></td><td style="padding:9px;font-size:11px;">LTTS has aerospace ER&D and competes directly with Cyient on avionics SW and systems engineering across the Honeywell vendor landscape.</td><td style="padding:9px;font-size:11px;color:#e31837;">Primary competitor. Differentiate on: MRO/propulsion tech pubs depth (LTTS weaker), BIETC Hyderabad vs. LTTS Bangalore, eVTOL cert track record (Eve program), FbW DO-178C FCS.</td></tr>
+        <tr><td style="padding:9px;font-weight:600;">LTTS (L&T Tech Svcs)</td><td style="padding:9px;"><span class="tag">ER&D</span></td><td style="padding:9px;font-size:11px;">LTTS has aerospace ER&D and competes directly with Cyient on avionics SW and systems engineering across the Honeywell vendor landscape.</td><td style="padding:9px;font-size:11px;color:#9b2335;">Primary competitor. Differentiate on: MRO/propulsion tech pubs depth (LTTS weaker), BIETC Hyderabad vs. LTTS Bangalore, eVTOL cert track record (Eve program), FbW DO-178C FCS.</td></tr>
         <tr style="background:#f9f9f9;"><td style="padding:9px;font-weight:600;">Collins Aerospace (RTX)</td><td style="padding:9px;"><span class="tag">OEM competitor</span></td><td style="padding:9px;font-size:11px;">Collins competes with Honeywell ES on avionics (Pro Line Fusion vs. Anthem). Not an ER&D vendor — an existential threat to Anthem's market share.</td><td style="padding:9px;font-size:11px;color:#1b5e20;">Use this framing: cert delays on Anthem = market share Collins can capture. Cyient cert support is "Anthem schedule insurance" — not a cost, a competitive necessity.</td></tr>
         <tr><td style="padding:9px;font-weight:600;">Garmin (Aviation)</td><td style="padding:9px;"><span class="tag">OEM competitor</span></td><td style="padding:9px;font-size:11px;">Garmin G3000/G5000 competes with Anthem in bizjet cockpit market. Not an ER&D vendor at Honeywell.</td><td style="padding:9px;font-size:11px;color:#1b5e20;">Same framing as Collins. Anthem's cert timeline pressure is real — Garmin moves fast. Cyient's cert support protects Anthem's market timing.</td></tr>
       </tbody>
@@ -836,7 +914,7 @@ const HW_DATA = {
   <div class="section-title">⚡ Fast-Sell Skills Matrix</div>
   <div style="overflow-x:auto;margin-bottom:25px;">
     <table style="width:100%;border-collapse:collapse;font-size:12px;">
-      <thead><tr style="background:#e31837;color:white;">
+      <thead><tr style="background:#9b2335;color:white;">
         <th style="padding:12px;text-align:left;">Honeywell Pain</th>
         <th style="padding:12px;text-align:left;">Cyient Proof Point</th>
         <th style="padding:12px;text-align:left;">BU Owner</th>
@@ -882,6 +960,34 @@ const HW_DATA = {
       </div>
     </div>
   </div>
+</div>
+
+<!-- ═══ OUTREACH PLAYBOOK ═══ -->
+<div id="outreach" class="section">
+  <div class="section-title">🤝 Outreach Playbook — <span id="op-headline"></span></div>
+  <div id="op-badge" style="display:inline-block;background:#4caf50;color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:22px;"></div>
+
+  <div id="op-triggers" class="grid-2" style="margin-bottom:28px;"></div>
+
+  <div class="card" style="border-top-color:#1a1a2e;">
+    <div class="card-title">Cold → Warm: 5-Step Sequence</div>
+    <div id="op-steps"></div>
+  </div>
+</div>
+
+<!-- ═══ PARTNERSHIPS ═══ -->
+<div id="partnerships" class="section">
+  <div class="section-title">🤝 Partnerships &amp; Alliances — Honeywell Technology Ecosystem</div>
+  <div id="pw-cards" class="grid-2"></div>
+</div>
+
+<!-- ═══ EVENTS ═══ -->
+<div id="events" class="section">
+  <div class="section-title">📅 Industry Events — 2026 Calendar</div>
+  <div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:12px 16px;margin-bottom:22px;font-size:12.5px;color:#92400e;">
+    🗓️ <strong>Why events matter:</strong> Honeywell BU presidents and supply-chain leadership attend these events. Pre-event outreach (2 weeks before) converts cold emails into scheduled meetings.
+  </div>
+  <div id="ev-cards" class="grid-2"></div>
 </div>
 
 </div><!-- /main-content -->
@@ -965,7 +1071,7 @@ function initDashboard() {
     const bg      = isGap ? '#fff8e1' : '#f9f9f9';
     const lbl     = s.roles >= 3000 ? 'loc-india' : (s.label.includes('IN') ? 'loc-india' : 'loc-us');
     sitesEl.innerHTML += `
-      <div style="background:${bg};border-radius:8px;padding:12px 16px;min-width:190px;border-left:3px solid #e31837;border:${border};">
+      <div style="background:${bg};border-radius:8px;padding:12px 16px;min-width:190px;border-left:3px solid #9b2335;border:${border};">
         <div style="font-weight:700;font-size:13px;margin-bottom:4px;">${s.label} <span class="${lbl}">${s.bu}</span></div>
         <div style="font-size:11px;color:${isGap ? '#92400e' : '#555'};line-height:1.6;">${isGap ? '⚠️ ' : ''}${s.role}${s.gap ? ' — <strong>No aerospace ER&D. Cyient BIETC opportunity.</strong>' : ''}</div>
         <div style="font-size:10px;color:#999;margin-top:4px;">${s.roles.toLocaleString()} engineers</div>
@@ -978,7 +1084,7 @@ function initDashboard() {
     execEl.innerHTML += `
       <div class="card">
         <div style="font-weight:700;font-size:15px;color:#1a1a2e;margin-bottom:4px;">${e.name}</div>
-        <div style="font-size:11px;color:#e31837;font-weight:600;margin-bottom:6px;">${e.title}</div>
+        <div style="font-size:11px;color:#9b2335;font-weight:600;margin-bottom:6px;">${e.title}</div>
         <div style="font-size:11px;color:#666;">📍 ${e.location} · Since ${e.since}</div>
         ${e.note ? `<div style="font-size:11px;color:#999;margin-top:4px;">${e.note}</div>` : ''}
       </div>`;
@@ -1027,7 +1133,7 @@ function initDashboard() {
             Internal Operational Units that report into ${seg.short}:
           </div>
           ${iuRows || '<div style="font-size:11px;color:#999;padding:8px;">— Internal unit mapping TBC —</div>'}
-          <div style="margin-top:10px;padding:8px 10px;background:#fef2f2;border-left:3px solid #e31837;border-radius:0 6px 6px 0;font-size:11px;">
+          <div style="margin-top:10px;padding:8px 10px;background:#fef2f2;border-left:3px solid #9b2335;border-radius:0 6px 6px 0;font-size:11px;">
             <strong>~${seg.openRoles} open roles</strong> · Cyient angle: ${seg.cyientAngle}
           </div>
         </div>
@@ -1043,7 +1149,7 @@ function initDashboard() {
           <div style="width:10px;height:10px;border-radius:50%;background:${u.headerColor};"></div>
           <span style="font-weight:700;font-size:13px;color:#1a1a2e;">${u.name}</span>
         </div>
-        <div style="font-size:11px;color:#e31837;margin-bottom:4px;font-weight:600;">${u.lead}</div>
+        <div style="font-size:11px;color:#9b2335;margin-bottom:4px;font-weight:600;">${u.lead}</div>
         <div style="font-size:11px;color:#555;margin-bottom:5px;"><strong>Sub-units:</strong> ${u.subunits.join(', ')}</div>
         <div style="font-size:10px;background:#e8f5e9;padding:4px 8px;border-radius:4px;color:#1b5e20;font-weight:600;">⚡ ${u.cyientFocus}</div>
       </div>`;
@@ -1132,6 +1238,42 @@ function initDashboard() {
   document.getElementById('action-cs-hdr').textContent  = '🛡️ ' + cs.name + ' (' + cs.short + ') — ' + cs.president + ' · $' + cs.revenue + 'B';
   document.getElementById('action-cs-sub').textContent  = csIU.subunits.join(' · ') + ' · Phoenix / Clearwater FL';
 }
+
+  // ── Outreach Playbook ────────────────────────────────────────────────
+  const op = d.outreachPlaybook;
+  document.getElementById('op-headline').textContent = op.headline;
+  document.getElementById('op-badge').textContent    = op.badge;
+  document.getElementById('op-triggers').innerHTML   = op.triggers.map(t => `
+    <div class="card" style="border-top-color:#7c3aed;">
+      <div class="card-title">${t.icon} ${t.label}</div>
+      <p style="font-size:12.5px;line-height:1.7;color:#444;margin-bottom:10px;">${t.body}</p>
+      <div style="background:#f0fdf4;border-left:3px solid #22c55e;padding:8px 12px;border-radius:0 6px 6px 0;font-size:11.5px;color:#166534;font-weight:600;">⚡ Action: ${t.action}</div>
+    </div>`).join('');
+  document.getElementById('op-steps').innerHTML = op.coldToWarm.map(s => `
+    <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0f0f0;">
+      <div style="min-width:28px;height:28px;background:#7c3aed;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">${s.step}</div>
+      <div><div style="font-size:13px;font-weight:700;color:#1a1a2e;margin-bottom:4px;">${s.label}</div>
+      <div style="font-size:12px;color:#555;line-height:1.6;">${s.body}</div></div>
+    </div>`).join('');
+
+  // ── Partnerships ─────────────────────────────────────────────────────
+  document.getElementById('pw-cards').innerHTML = d.partnerships.map(p => `
+    <div class="card" style="border-top-color:#0284c7;">
+      <div class="card-title">${p.name} <span class="tag">${p.type}</span> <span class="tag" style="background:#dcfce7;color:#166534;">${p.status}</span></div>
+      <p style="font-size:12.5px;line-height:1.7;color:#444;margin-bottom:10px;">${p.desc}</p>
+      <div style="background:#eff6ff;border-left:3px solid #0284c7;padding:8px 12px;border-radius:0 6px 6px 0;font-size:11.5px;color:#1e40af;font-weight:600;">🎯 Cyient Angle: ${p.angle}</div>
+    </div>`).join('');
+
+  // ── Events ──────────────────────────────────────────────────────────
+  document.getElementById('ev-cards').innerHTML = d.events.map(e => `
+    <div class="card" style="border-top-color:#d97706;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+        <div class="card-title" style="margin-bottom:0;">${e.name}</div>
+        <span style="font-size:12px;font-weight:700;">${e.priority}</span>
+      </div>
+      <div style="font-size:12px;color:#666;margin-bottom:6px;">📍 ${e.location} &nbsp;·&nbsp; 📅 ${e.date} &nbsp;·&nbsp; <span class="tag">${e.type}</span></div>
+      <p style="font-size:12.5px;line-height:1.7;color:#444;">${e.why}</p>
+    </div>`).join('');
 
 document.addEventListener('DOMContentLoaded', initDashboard);
 </script>
